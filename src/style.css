@@ -1,5 +1,5 @@
 body {
-    background-color: #CADCAE;
+    background-color: #E1E9C9;
     font-family: Garamond, serif;
 }
 
@@ -23,11 +23,58 @@ header {
 
 .instructions {
     padding: 16px;
+    border: 1px solid #FEE8D9;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+a {
+    color: #de8b38;
+}
+
+.submit-button {
+    margin-left: 10px;
+    background-color: #FEE8D9;
+    color: #EDA35A;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 24px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Garamond, serif;
+    transition-duration: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: rgba(65, 50, 100, 0.08);
+    color: #FEE8D9;
+
+}
+
+.poem {
+    font-size: 16px;
+    background-color: #CADCAE;
+    padding: 20px;
+    line-height: 2;
+    border-left: 3px solid #EDA35A;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    border-radius: 5px;
 }
 
 form {
     padding: 30px;
-    background-color: #E1E9C9;
+    background-color: #CADCAE;
     border-radius: 10px;
     display: flex;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    margin-bottom: 30px;
 }
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
