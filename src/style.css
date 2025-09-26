@@ -57,24 +57,46 @@ a {
     font-size: 16px;
     background-color: #CADCAE;
     padding: 20px;
+    display: block;
     line-height: 2;
     border-left: 3px solid #EDA35A;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     border-radius: 5px;
 }
-
-form {
+.form-container {
     padding: 30px;
     background-color: #CADCAE;
     border-radius: 10px;
-    display: flex;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     margin-bottom: 30px;
+}
+form {
+    display: flex;
+}
+
+.hint {
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
     text-align: center;
     font-size: 12px;
     margin-top: 30px;
+    opacity: 0.8;
 }
 
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}

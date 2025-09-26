@@ -18,6 +18,10 @@ let prompt = `User instructions are: Generate a poem about ${instructionsInput.v
 let context= "You are an excellent poet and love writing short poems, you need to generate a poem with maximum 8 lines in basic HTML, you don't need to show the word HTML, you need to follow the user instructions, remember to always put a tittle in your poem";
 let apiUrl= `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let poemElement = document.querySelector("#poem");
+poemElement.classList.remove("hidden")
+poemElement.innerHTML = `Generating poem about ${instructionsInput.value}<span class="blink">⌛... </span>`
+
 axios.get(apiUrl).then(displayPoem);
 
 
